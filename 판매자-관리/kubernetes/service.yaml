@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: 판매자-관리
+  labels:
+    app: 판매자-관리
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: 판매자-관리
